@@ -14,7 +14,7 @@
 	<name>sortedlist</name>
 	<description>Exercise to keep ordered a list</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
