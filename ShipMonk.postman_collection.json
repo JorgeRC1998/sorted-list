@@ -7,114 +7,238 @@
 	},
 	"item": [
 		{
-			"name": "Get sorted strings",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/shipmonk/strings?sort=descendant",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"shipmonk",
-						"strings"
-					],
-					"query": [
-						{
-							"key": "sort",
-							"value": "descendant"
+			"name": "Local",
+			"item": [
+				{
+					"name": "Get sorted strings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/shipmonk/strings?sort=descendant",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shipmonk",
+								"strings"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "descendant"
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get sorted integers",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/shipmonk/integers?sort=ascendant",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"shipmonk",
-						"integers"
-					],
-					"query": [
-						{
-							"key": "sort",
-							"value": "ascendant"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Add string",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"string\": \"joe\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:8080/shipmonk/string",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"shipmonk",
-						"string"
-					]
+				{
+					"name": "Get sorted integers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/shipmonk/integers?sort=ascendant",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shipmonk",
+								"integers"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "ascendant"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add string",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"string\": \"joe\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/shipmonk/string",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shipmonk",
+								"string"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add integer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"integer\": 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/shipmonk/integer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shipmonk",
+								"integer"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Add integer",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"integer\": 50\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "Deployed on Heroku",
+			"item": [
+				{
+					"name": "Get sorted strings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sorted-list.herokuapp.com/shipmonk/strings?sort=descendant",
+							"protocol": "https",
+							"host": [
+								"sorted-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"shipmonk",
+								"strings"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "descendant"
+								}
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:8080/shipmonk/integer",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"shipmonk",
-						"integer"
-					]
+				{
+					"name": "Get sorted integers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sorted-list.herokuapp.com/shipmonk/integers?sort=ascendant",
+							"protocol": "https",
+							"host": [
+								"sorted-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"shipmonk",
+								"integers"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "ascendant"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add string",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"string\": \"joe\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sorted-list.herokuapp.com/shipmonk/string",
+							"protocol": "https",
+							"host": [
+								"sorted-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"shipmonk",
+								"string"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add integer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"integer\": 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sorted-list.herokuapp.com/shipmonk/integer",
+							"protocol": "https",
+							"host": [
+								"sorted-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"shipmonk",
+								"integer"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }
