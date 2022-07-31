@@ -2,7 +2,6 @@ package com.shipmonk.sortedlist.dao;
 
 import java.util.Comparator;
 import java.util.LinkedList;
-import java.util.List;
 
 import org.springframework.stereotype.Component;
 

@@ -10,33 +10,7 @@
 			"name": "Local",
 			"item": [
 				{
-					"name": "Get sorted strings",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/shipmonk/strings?sort=descendant",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"shipmonk",
-								"strings"
-							],
-							"query": [
-								{
-									"key": "sort",
-									"value": "descendant"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get sorted integers",
+					"name": "Get sorted lists",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -125,60 +99,6 @@
 			"name": "Deployed on Heroku",
 			"item": [
 				{
-					"name": "Get sorted strings",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://sorted-list.herokuapp.com/shipmonk/strings?sort=descendant",
-							"protocol": "https",
-							"host": [
-								"sorted-list",
-								"herokuapp",
-								"com"
-							],
-							"path": [
-								"shipmonk",
-								"strings"
-							],
-							"query": [
-								{
-									"key": "sort",
-									"value": "descendant"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get sorted integers",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://sorted-list.herokuapp.com/shipmonk/integers?sort=ascendant",
-							"protocol": "https",
-							"host": [
-								"sorted-list",
-								"herokuapp",
-								"com"
-							],
-							"path": [
-								"shipmonk",
-								"integers"
-							],
-							"query": [
-								{
-									"key": "sort",
-									"value": "ascendant"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Add string",
 					"request": {
 						"method": "POST",
@@ -233,6 +153,33 @@
 							"path": [
 								"shipmonk",
 								"integer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get sorted lists",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sorted-list.herokuapp.com/shipmonk/integers?sort=ascendant",
+							"protocol": "https",
+							"host": [
+								"sorted-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"shipmonk",
+								"integers"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "ascendant"
+								}
 							]
 						}
 					},
